@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Get Directions (gc) — string resources (en, LCID 1033)
+  Copyright © 2026 Gc Solutions. All rights reserved. Provided "AS IS", without warranty of any kind.
+-->
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/2001/XMLSchema" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- ═══ Control metadata — must match display-name-key / description-key in the manifest ═══ -->
+  <data name="gc_GetDirections_Display" xml:space="preserve">
+    <value>Get Directions</value>
+  </data>
+  <data name="gc_GetDirections_Desc" xml:space="preserve">
+    <value>Opens turn-by-turn directions to a destination address in an external maps provider.</value>
+  </data>
+
+  <!-- ═══ Host field — the cell that displays the button ═══ -->
+  <data name="gc_Host_Display" xml:space="preserve">
+    <value>Button host field</value>
+  </data>
+  <data name="gc_Host_Desc" xml:space="preserve">
+    <value>Bind to any unused single-line text column. This cell is replaced by the button; its value is not used.</value>
+  </data>
+
+  <!-- ═══ Bound address property labels ═══ -->
+  <data name="gc_Street_Display" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="gc_Street_Desc" xml:space="preserve">
+    <value>Street and house number of the destination.</value>
+  </data>
+  <data name="gc_City_Display" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="gc_City_Desc" xml:space="preserve">
+    <value>City or town of the destination.</value>
+  </data>
+  <data name="gc_PostalCode_Display" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="gc_PostalCode_Desc" xml:space="preserve">
+    <value>Postal or ZIP code of the destination.</value>
+  </data>
+  <data name="gc_Country_Display" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="gc_Country_Desc" xml:space="preserve">
+    <value>Country of the destination.</value>
+  </data>
+
+  <!-- ═══ Configuration input labels ═══ -->
+  <data name="gc_Provider_Display" xml:space="preserve">
+    <value>Maps provider</value>
+  </data>
+  <data name="gc_Provider_Desc" xml:space="preserve">
+    <value>The external maps service used to open directions.</value>
+  </data>
+  <data name="gc_Provider_Google" xml:space="preserve">
+    <value>Google Maps</value>
+  </data>
+  <data name="gc_Provider_Bing" xml:space="preserve">
+    <value>Bing Maps</value>
+  </data>
+  <data name="gc_Provider_Apple" xml:space="preserve">
+    <value>Apple Maps</value>
+  </data>
+  <data name="gc_Provider_OSM" xml:space="preserve">
+    <value>OpenStreetMap</value>
+  </data>
+  <data name="gc_ButtonLabel_Display" xml:space="preserve">
+    <value>Button label</value>
+  </data>
+  <data name="gc_ButtonLabel_Desc" xml:space="preserve">
+    <value>Optional override for the button text. Leave empty to use the default.</value>
+  </data>
+
+  <!-- ═══ Runtime UI strings (used in components via StringKeys) ═══ -->
+  <data name="gc_Button_GetDirections" xml:space="preserve">
+    <value>Get directions</value>
+  </data>
+  <data name="gc_Button_Aria" xml:space="preserve">
+    <value>Open directions to the destination address</value>
+  </data>
+
+</root>

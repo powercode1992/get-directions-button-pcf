@@ -1,0 +1,96 @@
+/*!
+ * GetDirections.css — Get Directions (gc) PowerApps Component Framework control
+ * Copyright © 2026 Gc Solutions. All rights reserved. Provided "AS IS", without warranty of any kind.
+ *
+ * Use this file for styles that cannot be expressed with Fluent UI makeStyles:
+ *   - Host form overrides (targeting elements outside the PCF root)
+ *   - CSS animations / @keyframes (makeStyles supports these but CSS file is simpler for complex ones)
+ *   - Print styles (@media print)
+ *   - Third-party component overrides that require global selectors
+ *
+ * For all component-level styling, prefer makeStyles() with Fluent UI tokens instead.
+ * See: https://react.fluentui.dev/?path=/docs/concepts-developer-makeStyles--page
+ */
+
+/* ── Container reset ────────────────────────────────────────────────────────── */
+
+/*
+ * PCF injects the control into a fixed-size container. Reset box-sizing and
+ * overflow so the React tree can control its own layout.
+ */
+.gc-get-directions-root {
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.gc-get-directions-root *,
+.gc-get-directions-root *::before,
+.gc-get-directions-root *::after {
+  box-sizing: inherit;
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────────── */
+
+@keyframes pcf-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pcf-slide-down {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pcf-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Apply with: className={styles.animateFadeIn} via makeStyles, or directly as a class name */
+.pcf-fade-in    { animation: pcf-fade-in   0.15s ease-out; }
+.pcf-slide-down { animation: pcf-slide-down 0.2s ease-out; }
+.pcf-spin       { animation: pcf-spin 1s linear infinite; }
+
+/* ── Scrollable regions ──────────────────────────────────────────────────────── */
+
+.pcf-scroll-y {
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Thin scrollbar on Chromium */
+  scrollbar-width: thin;
+}
+
+.pcf-scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+/* ── Accessibility utilities ─────────────────────────────────────────────────── */
+
+/* Visually hidden but accessible to screen readers */
+.pcf-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Print styles ────────────────────────────────────────────────────────────── */
+
+@media print {
+  .gc-get-directions-root {
+    overflow: visible;
+  }
+
+  /* Hide interactive elements that have no meaning in print */
+  .pcf-no-print {
+    display: none !important;
+  }
+}

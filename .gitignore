@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# PCF build output
+/out/
+**/generated/
+
+# dataverse-gen credentials — contains server URL, tenant, and auth secrets
+dataverse-gen.json
+
+# msbuild
+/bin/
+/obj/
+*.binlog
+
+# Visual Studio
+/.vs/
+*.suo
+*.user
+
+
+# npm
+npm-debug.log*
+
+# environment / secrets
+.env
+.env.local
+.env.*.local

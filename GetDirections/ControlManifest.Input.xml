@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Get Directions (gc) — PowerApps Component Framework control
+  Copyright © 2026 Gc Solutions. All rights reserved.
+
+  Provided "AS IS", without warranty of any kind. Routing, distance and map data
+  are supplied by third-party providers (Google Maps, Microsoft Bing Maps, Apple
+  Maps, OpenStreetMap). Their accuracy, availability and terms of use are the sole
+  responsibility of those providers. Verify all routes before travel.
+-->
+<manifest>
+  <control namespace="gc" constructor="GetDirections" version="0.0.3" display-name-key="gc_GetDirections_Display" description-key="gc_GetDirections_Desc" control-type="virtual" >
+    <!-- This control opens an external maps URL only; it makes no direct outbound service calls itself. -->
+    <external-service-usage enabled="false">
+    </external-service-usage>
+
+    <!-- ═══ Host field — the cell that displays the button ═══
+         Place the control on a dedicated, otherwise-unused single-line text column. This is the
+         PRIMARY bound property, so the column the control is added to is replaced by the button,
+         leaving the real address fields below free to stay as native, editable form fields.
+         The value of this column is never read or written. -->
+    <property name="gc_Host" display-name-key="gc_Host_Display" description-key="gc_Host_Desc" of-type="SingleLine.Text" usage="bound" required="false" />
+
+    <!-- ═══ Destination address fields (read-only) — map each to the matching address1_* column ═══ -->
+    <property name="gc_Street" display-name-key="gc_Street_Display" description-key="gc_Street_Desc" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="gc_City" display-name-key="gc_City_Display" description-key="gc_City_Desc" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="gc_PostalCode" display-name-key="gc_PostalCode_Display" description-key="gc_PostalCode_Desc" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="gc_Country" display-name-key="gc_Country_Display" description-key="gc_Country_Desc" of-type="SingleLine.Text" usage="bound" required="false" />
+
+    <!-- ═══ Configuration inputs ═══ -->
+    <property name="gc_Provider" display-name-key="gc_Provider_Display" description-key="gc_Provider_Desc" of-type="Enum" usage="input" required="false">
+      <value name="google" display-name-key="gc_Provider_Google" default="true">google</value>
+      <value name="bing" display-name-key="gc_Provider_Bing">bing</value>
+      <value name="apple" display-name-key="gc_Provider_Apple">apple</value>
+      <value name="osm" display-name-key="gc_Provider_OSM">osm</value>
+    </property>
+    <property name="gc_ButtonLabel" display-name-key="gc_ButtonLabel_Display" description-key="gc_ButtonLabel_Desc" of-type="SingleLine.Text" usage="input" required="false" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+      <css path="css/GetDirections.css" order="1" />
+      <resx path="strings/GetDirections.1033.resx" version="1.0.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
