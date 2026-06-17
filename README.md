@@ -86,7 +86,7 @@ Package the managed solution from the solution project with `dotnet build -c Rel
 
 ## Support
 
-Community-supported, no SLA. Please raise issues at `[<GITHUB ISSUES URL>](https://github.com/powercode1992/get-directions-button-pcf/issues?reload=1)`. Maintained by `Gc Solutions`.
+Community-supported, no SLA. Please raise issues at 'https://github.com/powercode1992/get-directions-button-pcf/issues?reload=1`. Maintained by `Gc Solutions`.
 
 ## License
 
