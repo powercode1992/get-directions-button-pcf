@@ -18,7 +18,6 @@ dataverse-gen.json
 *.suo
 *.user
 
-
 # npm
 npm-debug.log*
 

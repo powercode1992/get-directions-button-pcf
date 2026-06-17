@@ -4,10 +4,10 @@ A lightweight [PowerApps Component Framework](https://learn.microsoft.com/power-
 
 No API key. No maps license. No tenant configuration. Works on **any table, including custom tables**.
 
-<!-- Replace with a real screenshot or GIF of the button on a form -->
-![Get Directions button on a model-driven form](docs/screenshot.png)
+<p align="center">
+  <img src="getdirectionspcfscreenshot.png" alt="Get Directions knop op een formulier" width="720">
+</p>
 
-> `<SCREENSHOT PLACEHOLDER>` — capture the button on an Account form (record with an address), ideally a short GIF showing a click opening the maps app.
 
 ---
 
@@ -38,7 +38,6 @@ Model-driven apps have a native embedded map with directions, but it only works 
 
 1. Download the managed solution **`GcGetDirections_managed_1_2.zip`** from the [latest release](<RELEASE URL>).
 2. In `make.powerapps.com`: **Solutions → Import solution → ** select the zip → **Import**.
-3. See the [User & Administrator Guide](docs/UserGuide-GetDirections.md) for form setup.
 
 > **Heads-up — the host-field pattern:** because a PCF field control replaces the field it's bound to, you place this control on a **dedicated spare single-line text column** (the "host"), and bind the address columns to it as read-only inputs. Your real address fields stay editable. One spare column is needed per table. Full steps are in the User Guide.
 
@@ -77,10 +76,6 @@ npm run start:watch    # local test harness
 
 Package the managed solution from the solution project with `dotnet build -c Release`.
 
-## Documentation
-
-- [Solution Design Document](docs/SolutionDesignDocument-GetDirections.md)
-- [User & Administrator Guide](docs/UserGuide-GetDirections.md)
 
 ## Notes & limitations
 
@@ -95,6 +90,6 @@ Community-supported, no SLA. Please raise issues at `<GITHUB ISSUES URL>`. Maint
 
 ## License
 
-`<TO CONFIRM — recommended: MIT>`. See [`LICENSE`](LICENSE). Copyright © 2026 Gc Solutions. See [`NOTICE.md`](NOTICE.md) for the warranty disclaimer and third-party maps attribution.
+See [`LICENSE`](LICENSE). Copyright © 2026 Gc Solutions. See [`NOTICE.md`](NOTICE.md) for the warranty disclaimer and third-party maps attribution.
 
 > ⚠️ Directions and map data are provided by the selected third-party provider. **Verify all routes before travel. Use at your own risk.**
