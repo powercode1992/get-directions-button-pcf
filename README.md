@@ -36,7 +36,7 @@ Model-driven apps have a native embedded map with directions, but it only works 
 
 ## Install
 
-1. Download the managed solution **`GcGetDirections_managed_1_2.zip`** from the [latest release]https://github.com/powercode1992/get-directions-button-pcf/releases/tag/v1.2.0.
+1. Download the managed solution **`GcGetDirections_managed_1_2.zip`** from the [latest release](https://github.com/powercode1992/get-directions-button-pcf/releases/tag/v1.2.0).
 2. In `make.powerapps.com`: **Solutions → Import solution → ** select the zip → **Import**.
 
 > **Heads-up — the host-field pattern:** because a PCF field control replaces the field it's bound to, you place this control on a **dedicated spare single-line text column** (the "host"), and bind the address columns to it as read-only inputs. Your real address fields stay editable. One spare column is needed per table. Full steps are in the User Guide.
