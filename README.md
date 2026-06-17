@@ -1,4 +1,4 @@
-# Get Directions — PCF control for Power Apps
+# Get Directions — PCF control for Power Apps (Dynamics 365)
 
 A lightweight [PowerApps Component Framework](https://learn.microsoft.com/power-apps/developer/component-framework/overview) (PCF) **virtual control** that adds a button to a model-driven form. One click opens turn-by-turn directions to the record's address in the user's chosen maps provider **Google Maps, Bing Maps, Apple Maps, or OpenStreetMap** routed from their current location.
 
