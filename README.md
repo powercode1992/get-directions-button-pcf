@@ -1,6 +1,6 @@
 # Get Directions — PCF control for model-driven Power Apps
 
-A lightweight [PowerApps Component Framework](https://learn.microsoft.com/power-apps/developer/component-framework/overview) (PCF) **virtual control** that adds a button to a model-driven form. One click opens turn-by-turn directions to the record's address in the user's chosen maps provider — **Google Maps, Bing Maps, Apple Maps, or OpenStreetMap** — routed from their current location.
+A lightweight [PowerApps Component Framework](https://learn.microsoft.com/power-apps/developer/component-framework/overview) (PCF) **virtual control** that adds a button to a model-driven form. One click opens turn-by-turn directions to the record's address in the user's chosen maps provider **Google Maps, Bing Maps, Apple Maps, or OpenStreetMap** routed from their current location.
 
 No API key. No maps license. No tenant configuration. Works on **any table, including custom tables**.
 
